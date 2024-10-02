@@ -1,0 +1,46 @@
+@import url("global.css");
+
+section#auth-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  height: 60dvh;
+
+  & form {
+    width: clamp(428px, 60vw, 640px);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    & h2 {
+      font-size: 2rem;
+    }
+
+    & input {
+      padding: 1.25rem 0.75rem;
+      padding-bottom: 0.75rem;
+      border-radius: 4px;
+      border: 1px solid #333;
+    }
+
+    & button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+      transition: background-color 300ms ease;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
